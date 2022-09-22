@@ -142,36 +142,25 @@ function initializeCode() {
 
 function _initializeCode() {
   _initializeCode = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee() {
-    var cityTable, url, dataPromise, dataJSON;
+    var url, dataPromise, dataJSON;
     return _regeneratorRuntime().wrap(function _callee$(_context) {
       while (1) {
         switch (_context.prev = _context.next) {
           case 0:
-            cityTable = document.getElementById("tableBody");
             url = "https://statfin.stat.fi/PxWeb/sq/4e244893-7761-4c4f-8e55-7a8d41d86eff";
-            _context.next = 4;
+            _context.next = 3;
             return fetch(url);
 
-          case 4:
+          case 3:
             dataPromise = _context.sent;
-            _context.next = 7;
+            _context.next = 6;
             return dataPromise.json();
 
-          case 7:
+          case 6:
             dataJSON = _context.sent;
             console.log(dataJSON);
-            /*dataJSON.forEach((municipalities) => {
-                let tr = document.createElement("tr")
-                let td1 = document.createElement("td")
-                let td2 = document.createElement("td")
-                  td1.innerText = municipalities.
-                td2.innerText = municipalities.dataset.value
-                tr.appendChild(td1)
-                tr.appendChild(td2)
-                  cityTable.appendChild(tr)
-            })*/
 
-          case 9:
+          case 8:
           case "end":
             return _context.stop();
         }
